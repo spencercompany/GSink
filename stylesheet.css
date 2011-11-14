@@ -1,0 +1,204 @@
+body
+{
+	font-family:		arial, helvetica, sans-serif;
+	font-size:		12px;
+}
+
+div.bodyWrapper
+{
+	width:			1004px;
+	margin:			0px auto;
+}
+
+h1
+{
+	background-color: 	#148d3d;
+	text-align:		center;
+	color:			#ffffff;
+	font-size:		16px;
+}
+
+h2
+{
+	text-align:		center;
+	color:			#148d3d;
+	font-size:		14px;
+}
+
+body.GetPassphrase	div.explanation
+{
+	width:			75%;
+	margin:			15px auto;
+}
+
+body.GetPassphrase 	p
+{
+	border:			2px solid #51c9a0;
+	padding:		10px;
+}
+
+table.centered-table
+{
+	margin:			0px auto;
+}
+
+td
+{
+	vertical-align:		top;
+}
+
+td.side-text
+{
+	padding:		10px;
+	width:			350px;
+}
+
+table.form-table
+{
+	margin-left:		auto;
+	margin-right:		auto;
+	font-size:		14px;
+	border:			3px solid #148d3d;
+	padding:		5px;
+	margin-bottom:		30px;
+	margin-top:		50px;
+}
+
+table.form-table 	th
+{
+	background-color:	#51c9a0;
+	color:			#ffffff;
+	padding-left:		5px;
+	padding-right:		5px;
+}
+
+table.form-table	tr#authoritative	td,
+table.form-table	tr#authoritative	input
+{
+	background-color:	#aaffaa;
+}
+
+table.form-table	td#prompt
+{
+	text-align:		right;
+}
+
+table.form-table	td#form-buttons
+{
+	text-align:		center;
+}
+
+button
+{
+	width:			100px;
+	background-color:	#51c9a0;
+	color:			#ffffff;
+}
+
+table.form-table	td#explanation
+{
+	text-align:		center;
+	font-size:		12px;
+}
+
+span#red
+{
+	color:			red;
+	font-weight:		bold;
+}
+
+span#green
+{
+	color:			green;
+}
+
+div#progress-bar
+{
+	border:			1px solid #000000;
+	width:			300px;
+}
+
+div#filled-progress-bar
+{
+	background-color:	#51c9a0;	
+	width:			0px;
+}
+
+table.progress-with-percent
+{
+	margin-left:		auto;
+	margin-right:		auto;
+}
+
+div#progress-percent
+{
+	font-size:		14px;
+	width:			35px;
+}
+
+table.form-table	td.sync-field
+{
+	width:			300px;
+	text-align:		center;
+}
+
+table#sync-stats-table	th
+{
+	width:			150px;
+}
+
+table#sync-stats-table	th#account
+{
+	width:			300px;
+}
+
+table#sync-stats-table	td#stats-field,
+table#sync-stats-table	td#stats-account
+{
+	text-align:		center;
+	font-size:		13px;
+}
+
+table#sync-stats-table	td#stats-errormsg,
+td#page-errormsg
+{
+	font-size:		12px;
+	color:			red;
+	font-weight:		bold;
+}
+
+td#page-errormsg
+{
+	text-align:		center;
+}
+
+h1	td.header-links		a
+{
+	color:			#51c9a0;	
+}
+
+h1	td.header-links
+{
+	text-align:		right;
+	width:			350px;
+	color:			#c951a0;	
+}
+
+a
+{
+	font-weight:		bold;
+	color:			#59c9a0;
+}
+
+table.time-displays
+{
+	width:			100%;
+}
+
+table.time-displays		td
+{
+	text-align:		center;
+	color:			#55aa55;
+	font-weight:		bold;
+	width:			50%;
+}

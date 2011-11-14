@@ -1,0 +1,86 @@
+
+    GSink Contact Manager
+    Developed by The Spencer Company with contributions by Katherine Harvest and
+    Sven Kauber and (most likely) many other talented programmers in the future
+    www.spencercompany.com
+    Phone: (818) 567-4000
+    Email: christopher@spencercompany.com
+    
+    ================================================================================
+    About GSink
+    --------------------------------------------------------------------------------
+    GSink is open source software maintained and developed by a community of users and
+    dedicated developers. It's distributed under the terms of the GNU General Public
+    License (or "GPL"), which means anyone is free to download it and share it with
+    others. This open development plan ensures that the community is constantly making
+    improvements to GSink and that encourages collaboration and high-quality software.
+
+    GSink will let you share your Google Contacts with one or an unlimited number of
+    other Gmail or Google Apps users anywhere in the world. The speed of the sync depends
+    upon how many contacts you have and how many other people you will be syncing with
+    plus the quality of the equipment being used on the server. The software will attempt
+    to predict the time at which the sync will complete for you. The sync is a one-way
+    sync designed to faithfully copy your contacts to one or an unlimited number of other
+    Gmail or Google Apps users. The system is fully automated, nobody sees the
+    information ( when the SSL protection is set up ) nor is any form of human
+    interaction or support needed for contact sharing - it just works. Only the contacts
+    with at least one email address will be synced because GSink requires the email
+    address field to match up contacts. In other words (and to avoid many questions about
+    this), contacts without email addresses will not be synced.
+    
+    GSink is presently used by government agencies, law offices, small to large
+    companies and cool people just like you.
+        
+    ================================================================================
+    System Requirements
+    --------------------------------------------------------------------------------
+    * 700 KB disk space on server
+    * Web server tested on Apache and Lighttpd SSL certificate (either self-generated or
+    commercial) recommended
+    * PHP Version 5.x
+    	Needed extensions: curl, libxml, xml, dom, mysqli, email sending functionality
+    * Database server MySQL 4.1 or 5.x
+    * A modern browser. Tested on: - Firefox 3.5 - Internet Explorer 8.0 - Opera 11.52 - 
+    Google Chrome (no realtime update indicator visible)
+
+    Note: GSink will probably work with newer technologies as they become available,
+    but please notify us immediately of any incompatible technology and we will address
+    it immediately
+    
+    ================================================================================
+    Installation Instructions
+    --------------------------------------------------------------------------------
+    1. Get the source files by using methods provided by GIT or download the source code as
+    a compressed package. Unzip / download / copy to a folder on the server that will be
+    used for the site.
+    
+    2. Set up the web server for the site and (optionally, but highly recommended)
+    install an SSL certificate
+    
+    3. Make a new database and import the contents of the included database.sql file.
+    
+    4. Edit config.inc
+    
+    	4.1. Insert host of the database as the value of DB_HOST, name of the database as
+    the value of DB_NAME, user that has access to the database as the value of DB_USER
+    and password for the user as the value of DB_PASS.
+    
+    	4.2. If you would like to use Google Ads on your site
+    then you can set the value of GOOGLE_AD_CLIENT to be the Google Ad client ID. 
+		
+		4.3. Set HAS_SSL either to true or false depending on whether you want to have a 
+	protected connection to the server. IMPORTANT! Please be sure to either use GSink over 
+	a local protected network or use an SSL certificate.
+
+    ================================================================================
+    Commercial Support
+    --------------------------------------------------------------------------------
+    If you need any help when setting up GSink, please do not hesitate to contact us! We
+    offer support based on an hourly fee and we can install GSink for you securely and
+    surely and make sure your experience is as smooth as possible. We may be reached
+    by calling (818) 567-4000 or email us at christopher@spencercompany.com
+    
+    The GSink Project
+    % The Spencer Company
+    1130 North Lima Street
+    Burbank, California 91505

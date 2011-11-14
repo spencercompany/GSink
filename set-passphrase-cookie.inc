@@ -1,0 +1,43 @@
+<?php
+
+/*
+	Author: Christopher Spencer (christopher@spencercompany.com)
+	Copyright (c) 2011, The Spencer Company. All Rights Reserved. 
+	
+	GSink is free software: you can redistribute it and/or modify it under the terms of the 
+	GNU General Public License as published by the Free Software Foundation, either 
+	version 3 of the License, or (at your option) any later version.
+
+	GSink is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+	without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+	PURPOSE. See the GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License along with GSink 
+	If not, see the license here: http://www.gnu.org/copyleft/gpl.html.
+*/
+	
+	$host = $_SERVER[ 'HTTP_HOST' ];
+	
+	if( stripos( $host, '.' ) )
+	{
+		$darray = explode( '.', $host );
+		$narray = array_reverse( $darray );
+		
+		$domain = $narray[ 1 ] . '.' . $narray[ 0 ];
+		unset( $darray, $narray );
+	}
+	else
+		$domain = $host;
+		
+
+	if( !empty( $_POST[ 'Passphrase' ] ) )
+	{
+		if( HAS_SSL )
+			setcookie( 'Passphrase', $_POST[ 'Passphrase' ], time() + ( 30 * 60 ), '/', '.' . $domain, true );
+		else
+			setcookie( 'Passphrase', $_POST[ 'Passphrase' ], time() + ( 30 * 60 ) );
+	}
+
+
+	header( 'Location: ?Action=MainMenu' );
+?>
